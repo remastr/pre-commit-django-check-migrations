@@ -1,0 +1,7 @@
+-   id: check-migrations-created
+    name: Check migrations created
+    entry: check-migrations-created
+    files: ".*/models.py$"
+    language: python
+    language_version: python3
+    pass_filenames: false

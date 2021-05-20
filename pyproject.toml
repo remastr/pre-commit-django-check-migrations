@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pre-commit-django-check-migrations"
+version = "0.1.0"
+description = ""
+authors = ["napmn <lukass135@gmail.com>"]
+packages = [
+  { include = "check_migrations_created.py" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+check-migrations-created = "check_migrations_created:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
